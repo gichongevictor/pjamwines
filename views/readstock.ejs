@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>current Stock</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Brand</th>
+            <th>Pieces</th>
+            <th>Buying Price</th>
+            <th>WholeSalePrice</th>
+            <th>Retail Price</th>
+        </tr>
+        <% for(var i=0; i < data.length; i++) {%>
+            <tr>
+                <td><%= data[i].brand%></td>
+                <td><%= data[i].pieces%></td>
+                <td><%= data[i].buying_price%></td>
+                <td><%= data[i].wholesale_price%></td>
+                <td><%= data[i].retail_price%></td>
+            </tr>
+            <% } %>
+    </table>
+    
+</body>
+</html>
